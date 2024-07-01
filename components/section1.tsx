@@ -3,17 +3,17 @@ import shoe from "@/public/shoe.png";
 
 export default function Section1() {
   return (
-    <div className="flex flex-col gap-8 w-full py-12 px-4 h-max relative">
-      <div className="flex flex-col gap-8 items-center">
-        <div className="w-full text-[#0F172A] h-[124px] text-center font-black text-[56px] p-0 leading-[61px]">
+    <div className="flex flex-col gap-8 w-full py-12 px-4 h-max relative 2xl:bg-[#FEFBEB] 2xl:flex-row 2xl:p-20 2xl:gap-20 2xl:items-center">
+      <div className="w-full flex flex-col gap-8 items-center text-center 2xl:text-start 2xl:h-max">
+        <div className="w-full text-[#0F172A]  font-black text-[56px] p-0 leading-[61px] text-c">
           Collectible Sneakers
         </div>
-        <p className="w-full text-[#0F172A] text-center font-normal text-[18px] leading-[29px]">
+        <p className="w-full text-[#0F172A]  font-normal text-[18px] leading-[29px] ">
           Sit elit feugiat turpis sed integer integer accumsan turpis. Sed
           suspendisse nec lorem mauris. Pharetra, eu imperdiet ipsum ultrices
           amet.
         </p>
-        <div className="w-[347px] h-[56px] gap-4 flex">
+        <div className="w-[347px] h-[56px] gap-4 flex 2xl:w-full">
           <button className="w-[179px] h-full border-2 rounded-lg border-[#78350F] text-[#78350F] font-medium text-[20px]">
             Sign up now
           </button>
@@ -43,16 +43,15 @@ export default function Section1() {
           </button>
         </div>
       </div>
-      <div className="w-full h-max flex justify-center items-center">
-        <div className="bg-[#FBBF24] z-10 w-[273px] h-[276px] rounded-[50px] absolute" />
+      <div className="w-full h-max flex justify-center items-center 2xl:relative">
+        <div className="bg-[#FBBF24] z-10 w-[273px] h-[276px] rounded-[50px] absolute 2xl:w-[367px] 2xl:h-[372px] 2xl:top-10" />
         <Image
           src={shoe}
           alt="shoe"
-          className="z-20"
-          width={361}
+          className="z-20 w-[361px] 2xl:w-[486px] "
         />
       </div>
-      <div className="absolute bottom-0 bg-transparent -ml-4  border-b-[324px] border-l-[393px] border-l-transparent border-b-[#FEF3C7]" />
+      <div className="absolute bottom-0 bg-transparent -ml-4  border-b-[324px] border-l-[393px] border-l-transparent border-b-[#FEF3C7] 2xl:hidden" />
     </div>
   );
 }

@@ -11,7 +11,7 @@ import Section7 from "@/components/section7";
 
 export default async function Home() {
   return (
-    <div className="flex flex-col items-center w-[393px] min-h-screen h-max overflow-x-hidden xl:w-[1440px]">
+    <div className="flex flex-col items-center w-[393px] min-h-screen h-max overflow-x-hidden 2xl:w-[1440px]">
       <Navbar />
       <Section1 />
       <Section2 />
